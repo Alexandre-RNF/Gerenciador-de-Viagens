@@ -75,20 +75,20 @@ Dependendo da opção escolhida pelo usuário, quatro tipos de informação dife
 - Relatar cada transporte
 - Relata todas as viagens
 ```diff
-- Novamente, o erro citado anteriormente. Por mais que o tempo final da viagem seja exibido, o programa não armazena as horas em trânsito da viagem
+- Novamente, o erro citado anteriormente. Por mais que o tempo final da viagem seja exibido, o programa não armazena as horas em trânsito da viagem e exibe como 0 
 ```
 - Relata as cidades mais visitadas
 ## Estrutura do Código 
 ![Mapa codigo](https://github.com/user-attachments/assets/0e662623-2203-4ee3-b27f-115eac09a090)
 
-bibliotecas.h: Inclusão de todas as bibliotecas utilizadas no código
-classes.h: Inclusão de todas as classes utilizadas no código
+- bibliotecas.h: Inclusão de todas as bibliotecas utilizadas no código
+- classes.h: Inclusão de todas as classes utilizadas no código
 
 - main.cpp: Corpo principal do código. É onde ocorre a navegação pelo menu e o cadastro dos dados principais (passageiros, transportes, trajetos e cidades). Além disso, ocorre a armazenação e carregamento dos dados
 - armazenar.h: Conjunto de funções responsável por armazenar os dados cadastrados
 - carregar.h: Conjunto de funções responsável por carregar os dados cadastrados
 
-- relatórios.h: É onde ocorre a navegação de um segundo mini menu e a exibição de diversos dados envolvendo as viagens, transportes e passageiros
+- relatorios.h: É onde ocorre a navegação de um segundo mini menu e a exibição de diversos dados envolvendo as viagens, transportes e passageiros
 
 - gerenciador.h: Criação e armazenamento da viagem a partir dos dados fornecidos pelo usuário. Exibição do melhor trajeto e rota a ser seguida (listando cada cidade da rota). Exibição dos dados envolvendo a viagem (envolvendo horas e distâncias)
 - distra.h: Conjunto de funções que busca implementar o algoritmo de Dijkstra para o cálculo da melhora rota entre os diferentes trajetos.
