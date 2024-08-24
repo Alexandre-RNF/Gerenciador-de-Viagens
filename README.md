@@ -57,7 +57,7 @@ Quando uma opção do menu for finalizada, o programa automáticamente retornar�
 
 - Por meio da cidade de origem e cidade destino, o sistema calculará o melhor trajeto a ser seguido, exibindo as cidades da rota e a distância a ser percorrida
 ```diff
-- Diferenciação entre rotas terrestres e aquáticas (Infelizmente, o programa não diferencia entre rotas terrestres e aquáticas)
+- Infelizmente o programa não diferencia entre rotas terrestres e aquáticas
 ```
 - A partir dos dados fornecidos, o programa irá exibir os dados á respeito da viagem, tais como: (Distância percorrida, número de paradas, duração da viagem e horário de chegada)
 - Ao fim, a viagem é criada e armazenada no sistema
@@ -67,10 +67,33 @@ Quando uma opção do menu for finalizada, o programa automáticamente retornar�
 - Não existe estado em trânsito em que o programa avança as horas automaticamente ou manualmente. Na criação de uma viagem os dados a respeito dela são exibidos imediatamente.
 ```
 ### (6) - Relatórios
-...
-
+Dependendo da opção escolhida pelo usuário, quatro tipos de informação diferentes podem ser exibidas
+- Relatar cada pessoa
+```diff
+- O programa não exibe origem-destino-transporte. Além disso, devido ao erro citado anteriormente de não alterar a cidade dos passageiros ele sempre exibe como disponível (estado padrão de um passageiro)
+```
+- Relatar cada transporte
+- Relata todas as viagens
+```diff
+- Novamente, o erro citado anteriormente. Por mais que o tempo final da viagem seja exibido, o programa não armazena as horas em trânsito da viagem
+```
+- Relata as cidades mais visitadas
 ## Estrutura do Código 
 ![Mapa codigo](https://github.com/user-attachments/assets/0e662623-2203-4ee3-b27f-115eac09a090)
+
+bibliotecas.h: Inclusão de todas as bibliotecas utilizadas no código
+classes.h: Inclusão de todas as classes utilizadas no código
+
+- main.cpp: Corpo principal do código. É onde ocorre a navegação pelo menu e o cadastro dos dados principais (passageiros, transportes, trajetos e cidades). Além disso, ocorre a armazenação e carregamento dos dados
+- armazenar.h: Conjunto de funções responsável por armazenar os dados cadastrados
+- carregar.h: Conjunto de funções responsável por carregar os dados cadastrados
+
+- relatórios.h: É onde ocorre a navegação de um segundo mini menu e a exibição de diversos dados envolvendo as viagens, transportes e passageiros
+
+- gerenciador.h: Criação e armazenamento da viagem a partir dos dados fornecidos pelo usuário. Exibição do melhor trajeto e rota a ser seguida (listando cada cidade da rota). Exibição dos dados envolvendo a viagem (envolvendo horas e distâncias)
+- distra.h: Conjunto de funções que busca implementar o algoritmo de Dijkstra para o cálculo da melhora rota entre os diferentes trajetos.
+- matematicas.h: Função que calcula distância percorrida, número de paradas, duração da viagem e horário de chegada a partir da distância, hora de início da viagem e os dados envolvendo o transporte
+
 
 
 
