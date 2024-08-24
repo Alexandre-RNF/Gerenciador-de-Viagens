@@ -45,7 +45,7 @@ Quando uma opção do menu for finalizada, o programa automáticamente retornar�
 ...
 
 ## Estrutura do Código 
-![mapa lp1](https://github.com/user-attachments/assets/72453d34-5c29-4fb3-bde1-223cc748528d)
+![Mapa codigo](https://github.com/user-attachments/assets/0e662623-2203-4ee3-b27f-115eac09a090)
 
 
 
