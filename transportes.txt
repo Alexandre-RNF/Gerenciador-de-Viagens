@@ -1,0 +1,4 @@
+Carro T 4 70 30 2 0 NULL
+Fusca7 T 4 50 10 1 0 NULL
+Cavalo T 2 40 30 1 0 NULL
+Ferraria T 1 100 0 0 0 NULL
